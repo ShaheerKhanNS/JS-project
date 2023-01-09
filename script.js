@@ -28,7 +28,7 @@ const addProduct = async function () {
       <button type="button" data-set ='${data.data._id}' id="button--edt" onclick="edit(this)">Edit</button>
       </td>
       </tr>`;
-    parentNode.innerHTML = parentNode.innerHTML + template;
+    parentNode.innerHTML += template;
     clearField();
   } catch (err) {
     console.log(err.message);
@@ -89,7 +89,7 @@ const retrieveData = async () => {
       <button type="button" data-set ='${_id}' id="button--edt" onclick="edit(this)">Edit</button>
       </td>
       </tr>`;
-    parentNode.innerHTML = parentNode.innerHTML + template;
+    parentNode.innerHTML += template;
   });
 };
 
